@@ -19,7 +19,10 @@ clean: ## Clean all links
 	rm -f lib
 	rm -f plugin
 
-link: ## Link all required resources
+node_modules:
+	npm install
+
+link: node_modules ## Link all required resources
 	ln -fs ../node_modules/font-awesome/css/font-awesome.min.css css
 	for i in $$(ls node_modules/reveal.js/css); do \
 		ln -fs ../node_modules/reveal.js/css/$$i css/$$i; \

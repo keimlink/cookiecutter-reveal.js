@@ -16,13 +16,7 @@ presentation:
 Installing and linking the dependencies
 =======================================
 
-Install the dependencies:
-
-::
-
-    $ npm install
-
-Link all required resources:
+Install and link all required resources:
 
 ::
 
