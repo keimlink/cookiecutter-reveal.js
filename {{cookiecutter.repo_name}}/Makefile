@@ -8,14 +8,18 @@ help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
 clean: ## Clean all links
-	rm -fr css
+	rm -f css/font-awesome.min.css
+	if [ -d node_modules ]; then \
+	for i in $$(ls node_modules/reveal.js/css); do \
+		rm -f css/$$i; \
+	done \
+	fi
 	rm -f fonts
 	rm -f js
 	rm -f lib
 	rm -f plugin
 
 link: ## Link all required resources
-	mkdir -p css
 	ln -fs ../node_modules/font-awesome/css/font-awesome.min.css css
 	for i in $$(ls node_modules/reveal.js/css); do \
 		ln -fs ../node_modules/reveal.js/css/$$i css/$$i; \
