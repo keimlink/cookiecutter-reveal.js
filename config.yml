@@ -1,0 +1,7 @@
+default_context:
+  presentation_title: "It's easier to ask forgiveness than it is to get permission"
+  presentation_subtitle: "As quoted in the U.S. Navy's Chips Ahoy magazine (July 1986)"
+  presentation_description: "If it's a good idea, go ahead and do it. It is much easier to apologize than it is to get permission."
+  author_name: "Grace Hopper"
+  twitter_account: "ghc"
+  github_account: "ghc"

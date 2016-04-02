@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="{{ cookiecutter.presentation_language }}">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ cookiecutter.presentation_title }}</title>
+    <meta name="description" content="{{ cookiecutter.presentation_description }}">
+    <meta name="author" content="{{ cookiecutter.author_name }}">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h2>{{ cookiecutter.presentation_title }}</h2>
+          <p>{{ cookiecutter.presentation_subtitle }}</p>
+          <p>{{ cookiecutter.author_name }}</p>
+        </section>
+        <section>
+          <h2>Create your other slides here</h2>
+        </section>
+        <section>
+          <h2>Resources</h2>
+          <p>
+            <a href="https://github.com/{{ cookiecutter.github_account }}/{{ cookiecutter.repo_name }}"><i class="fa fa-github">&nbsp;</i>{{ cookiecutter.github_account }}/{{ cookiecutter.repo_name }}</a>
+          </p>
+          <p>
+            <a href="https://twitter.com/{{ cookiecutter.twitter_account }}"><i class="fa fa-twitter">&nbsp;</i>@{{ cookiecutter.twitter_account }}</a>
+          </p>
+          <p style="margin-top: 2em; margin-bottom: 0">
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+              <img alt="Creative Commons License" style="border-width: 0; margin: 0" src="img/cc-by-88x31.png" />
+            </a><br>
+            <span style="font-size: 0.4em">This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+          </p>
+        </section>
+      </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+  </body>
+</html>

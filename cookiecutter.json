@@ -1,0 +1,10 @@
+{
+    "presentation_title": "The title of your presentation",
+    "presentation_subtitle": "The subtitle is displayed right below the title",
+    "presentation_description": "A longer description of your presentation",
+    "presentation_language": "en",
+    "author_name": "Markus Zapke-Gründemann",
+    "twitter_account": "keimlink",
+    "github_account": "keimlink",
+    "repo_name": "{{ cookiecutter.presentation_title|lower|replace(' ', '-')|replace(\"'\", '') }}"
+}
