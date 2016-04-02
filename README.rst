@@ -1,9 +1,9 @@
 **********************
-reveal.js-cookiecutter
+cookiecutter-reveal.js
 **********************
 
-.. image:: https://img.shields.io/travis/keimlink/reveal.js-cookiecutter/master.svg
-    :target: https://travis-ci.org/keimlink/reveal.js-cookiecutter
+.. image:: https://img.shields.io/travis/keimlink/cookiecutter-reveal.js/master.svg
+    :target: https://travis-ci.org/keimlink/cookiecutter-reveal.js
     :alt: Build Status
 
 A `cookiecutter <https://github.com/audreyr/cookiecutter>`_ template for
@@ -22,4 +22,4 @@ Create a new presentation template:
 
 ::
 
-    $ cookiecutter gh:keimlink/reveal.js-cookiecutter
+    $ cookiecutter gh:keimlink/cookiecutter-reveal.js
