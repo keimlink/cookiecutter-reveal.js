@@ -31,6 +31,16 @@ Serve the slides:
 
     $ make serve
 
+Controlling the presentation
+============================
+
+- Use the *SPACE BAR* to move to the next slide.
+- Use the *arrow keys* to move around.
+- Use the *F* key to enter full screen mode. Press the *ESC* key to leave it again.
+- Use the *S* key to open the moderator monitor containing the notes.
+- Use the *B* key to make the screen dark. Push the same key to brighten the screen again.
+- Use the *ESC* key to enter the bird's-eye view showing all slides. Then use the *arrow keys* to move around.
+
 License
 =======
 
