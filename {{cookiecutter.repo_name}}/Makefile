@@ -37,3 +37,6 @@ serve: ## Serve the slides
 	@echo "Serving slides at http://$(BIND_ADDRESS):$(PORT)/"
 	@echo "Quit the server with CONTROL-C."
 	@python -m http.server --bind $(BIND_ADDRESS) $(PORT)
+
+demo: ## Open the reveal.js demo
+	python -m webbrowser file://$$(pwd)/node_modules/reveal.js/demo.html
