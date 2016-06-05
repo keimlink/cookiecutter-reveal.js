@@ -23,14 +23,21 @@ Why should I use this?
 Usage
 =====
 
-Install cookiecutter:
+1. Install cookiecutter:
 
 ::
 
     $ pip install cookiecutter
 
-Create a new presentation template:
+2. Set up a new reveal.js project:
 
 ::
 
     $ cookiecutter gh:keimlink/cookiecutter-reveal.js
+
+3. Create your presentation! :rocket:
+
+.. note::
+
+    You can find more information on how to set up and use the presentation you
+    just created in the ``README.rst`` of your new reveal.js project.
