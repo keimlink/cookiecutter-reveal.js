@@ -1,3 +1,4 @@
+BIND_ADDRESS ?= 127.0.0.1
 PORT ?= 8000
 
 .DEFAULT_GOAL := help
@@ -33,6 +34,6 @@ link: node_modules ## Link all required resources
 	ln -fs node_modules/reveal.js/plugin .
 
 serve: ## Serve the slides
-	@echo "Serving slides at http://127.0.0.1:$(PORT)/"
+	@echo "Serving slides at http://$(BIND_ADDRESS):$(PORT)/"
 	@echo "Quit the server with CONTROL-C."
-	@python -m http.server $(PORT)
+	@python -m http.server --bind $(BIND_ADDRESS) $(PORT)
