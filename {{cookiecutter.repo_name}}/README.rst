@@ -11,7 +11,7 @@ You have to install the following requirements to build and serve the
 presentation:
 
 - `npm <https://www.npmjs.com/>`_
-- `Python 3 <https://www.python.org/>`_
+- `Python 3.4 <https://www.python.org/>`_ or newer
 
 Installing and linking the dependencies
 =======================================
