@@ -9,6 +9,17 @@ cookiecutter-reveal.js
 A `cookiecutter <https://github.com/audreyr/cookiecutter>`_ template for
 `reveal.js <https://github.com/hakimel/reveal.js>`_ presentations.
 
+Why should I use this?
+======================
+
+- You can set up and serve your presentation with only two commands!
+- Only `npm <https://www.npmjs.com/>`_ and `Python 3 <https://www.python.org/>`_ are required
+- Once you have installed all requirements the presentation works without internet access
+- The Python 3 `http.server <https://docs.python.org/3.5/library/http.server.html>`_ module is used to serve the slides which allows you to show the speaker notes in a separate browser window
+- Installing reveal.js via npm keeps the size of your presentation small and makes upgrades easy
+- A custom CSS file is already included and you can use it for your own styles
+- Default license is Creative Commons Attribution 4.0 International License
+
 Usage
 =====
 
