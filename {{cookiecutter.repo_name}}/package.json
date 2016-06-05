@@ -16,8 +16,8 @@
   },
   "homepage": "https://github.com/{{ cookiecutter.github_account }}/{{ cookiecutter.repo_name }}#readme",
   "dependencies": {
-    "font-awesome": "4.5.0",
     "reveal.js": "3.2.0"
+    "font-awesome": "4.6.3",
   },
   "private": true
 }
