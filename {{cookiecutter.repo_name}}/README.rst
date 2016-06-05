@@ -16,7 +16,7 @@ presentation:
 Installing and linking the dependencies
 =======================================
 
-Install and link all required resources:
+You can install and link all required resources by running
 
 ::
 
@@ -25,7 +25,7 @@ Install and link all required resources:
 Running the presentation
 ========================
 
-Serve the slides:
+You can serve the slides by running
 
 ::
 
@@ -40,6 +40,15 @@ Controlling the presentation
 - Use the *S* key to open the moderator monitor containing the notes.
 - Use the *B* key to make the screen dark. Push the same key to brighten the screen again.
 - Use the *ESC* key to enter the bird's-eye view showing all slides. Then use the *arrow keys* to move around.
+
+Showing all tasks in the ``Makefile``
+=====================================
+
+You can show all tasks in the ``Makefile`` by running
+
+::
+
+    $ make
 
 License
 =======
