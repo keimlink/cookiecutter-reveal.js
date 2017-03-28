@@ -2,13 +2,17 @@
 cookiecutter-reveal.js
 **********************
 
-.. image:: https://img.shields.io/travis/keimlink/cookiecutter-reveal.js/master.svg?style=flat-square
+.. image:: https://img.shields.io/travis/keimlink/cookiecutter-reveal.js/master.svg
     :target: https://travis-ci.org/keimlink/cookiecutter-reveal.js
     :alt: Build Status
 
-.. image:: https://img.shields.io/bithound/dependencies/github/keimlink/cookiecutter-reveal.js.svg?style=flat-square
+.. image:: https://img.shields.io/bithound/dependencies/github/keimlink/cookiecutter-reveal.js.svg
     :target: https://www.bithound.io/github/keimlink/cookiecutter-reveal.js/master/dependencies/npm
     :alt: bitHound Dependencies
+
+.. image:: https://pyup.io/repos/github/keimlink/cookiecutter-reveal.js/shield.svg
+     :target: https://pyup.io/repos/github/keimlink/cookiecutter-reveal.js/
+     :alt: Updates
 
 A `cookiecutter <https://github.com/audreyr/cookiecutter>`_ template for
 `reveal.js <https://github.com/hakimel/reveal.js>`_ presentations.
