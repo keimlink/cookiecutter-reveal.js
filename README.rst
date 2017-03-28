@@ -2,7 +2,7 @@
 cookiecutter-reveal.js
 **********************
 
-.. image:: https://img.shields.io/travis/keimlink/cookiecutter-reveal.js/master.svg
+.. image:: https://img.shields.io/travis/keimlink/cookiecutter-reveal.js/master.svg?style=flat-square
     :target: https://travis-ci.org/keimlink/cookiecutter-reveal.js
     :alt: Build Status
 
