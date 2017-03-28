@@ -6,6 +6,10 @@ cookiecutter-reveal.js
     :target: https://travis-ci.org/keimlink/cookiecutter-reveal.js
     :alt: Build Status
 
+.. image:: https://img.shields.io/bithound/dependencies/github/keimlink/cookiecutter-reveal.js.svg?style=flat-square
+    :target: https://www.bithound.io/github/keimlink/cookiecutter-reveal.js/master/dependencies/npm
+    :alt: bitHound Dependencies
+
 A `cookiecutter <https://github.com/audreyr/cookiecutter>`_ template for
 `reveal.js <https://github.com/hakimel/reveal.js>`_ presentations.
 
