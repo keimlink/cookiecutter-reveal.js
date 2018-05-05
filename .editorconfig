@@ -13,9 +13,6 @@ end_of_line = lf
 [*.yml]
 indent_size = 2
 
-[.bithoundrc]
-indent_size = 2
-
 [LICENSE]
 insert_final_newline = false
 

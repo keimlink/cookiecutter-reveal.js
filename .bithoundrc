@@ -1,3 +1,0 @@
-{
-  "packageJsonLocation": "{{cookiecutter.repo_name}}/package.json"
-}
