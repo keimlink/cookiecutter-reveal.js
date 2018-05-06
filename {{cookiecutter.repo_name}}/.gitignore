@@ -7,3 +7,5 @@ js
 lib
 node_modules
 plugin
+third_party_plugins/*
+!third_party_plugins/.gitkeep

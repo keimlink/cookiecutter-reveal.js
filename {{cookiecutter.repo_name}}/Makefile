@@ -21,6 +21,7 @@ clean: ## Clean all linked resources
 	rm -f js
 	rm -f lib
 	rm -f plugin
+	rm -f third_party_plugins/*
 	rm -f webfonts
 
 .PHONY: link
@@ -36,6 +37,8 @@ link: ## Link all required resources
 	ln -fs node_modules/reveal.js/js .
 	ln -fs node_modules/reveal.js/lib .
 	ln -fs node_modules/reveal.js/plugin .
+	ln -fs ../node_modules/reveal.js-menu/menu.css third_party_plugins/menu.css
+	ln -fs ../node_modules/reveal.js-menu/menu.js third_party_plugins/menu.js
 
 .PHONY: serve
 serve: ## Serve the slides
