@@ -2,19 +2,14 @@
   "name": "{{ cookiecutter.repo_name }}",
   "version": "1.0.0",
   "description": "{{ cookiecutter.presentation_description }}",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "homepage": "https://github.com/{{ cookiecutter.github_account }}/{{ cookiecutter.repo_name }}",
+  "bugs": "https://github.com/{{ cookiecutter.github_account }}/{{ cookiecutter.repo_name }}/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/{{ cookiecutter.github_account }}/{{ cookiecutter.repo_name }}.git"
+    "url": "https://github.com/{{ cookiecutter.github_account }}/{{ cookiecutter.repo_name }}.git"
   },
   "author": "{{ cookiecutter.author_name }}",
   "license": "CC-BY-4.0",
-  "bugs": {
-    "url": "https://github.com/{{ cookiecutter.github_account }}/{{ cookiecutter.repo_name }}/issues"
-  },
-  "homepage": "https://github.com/{{ cookiecutter.github_account }}/{{ cookiecutter.repo_name }}#readme",
   "dependencies": {
     "font-awesome": "4.6.3",
     "reveal.js": "3.3.0"
