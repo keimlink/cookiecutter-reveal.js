@@ -3,11 +3,12 @@ PORT ?= 8000
 
 .DEFAULT_GOAL := help
 
-.PHONY: help clean link serve
 
+.PHONY: help
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
+.PHONY: clean
 clean: ## Clean all links
 	rm -f css/font-awesome.min.css
 	if [ -d node_modules ]; then \
@@ -24,6 +25,7 @@ node_modules:
 	npm install
 
 link: node_modules ## Link all required resources
+.PHONY: link
 	ln -fs ../node_modules/font-awesome/css/font-awesome.min.css css
 	for i in $$(ls node_modules/reveal.js/css); do \
 		ln -fs ../node_modules/reveal.js/css/$$i css/$$i; \
@@ -33,10 +35,12 @@ link: node_modules ## Link all required resources
 	ln -fs node_modules/reveal.js/lib .
 	ln -fs node_modules/reveal.js/plugin .
 
+.PHONY: serve
 serve: ## Serve the slides
 	@echo "Serving slides at http://$(BIND_ADDRESS):$(PORT)/"
 	@echo "Quit the server with CONTROL-C."
 	@python -m http.server --bind $(BIND_ADDRESS) $(PORT)
 
+.PHONY: demo
 demo: ## Open the reveal.js demo
 	python -m webbrowser file://$$(pwd)/node_modules/reveal.js/demo.html
