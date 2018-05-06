@@ -3,6 +3,11 @@ SHELL := /bin/bash
 BIND_ADDRESS ?= 127.0.0.1
 PORT ?= 8000
 
+RSYNC_DEST ?= {{ cookiecutter.rsync_destination }}
+RSYNC_HOST ?= {{ cookiecutter.rsync_host }}
+RSYNC_SRC ?= css js lib index.html plugin third_party_plugins webfonts
+RSYNC_USER ?= {{ cookiecutter.rsync_user }}
+
 python = /usr/bin/env python $(1)
 
 .DEFAULT_GOAL := help
@@ -49,3 +54,7 @@ serve: ## Serve the slides
 .PHONY: demo
 demo: ## Open the reveal.js demo
 	$(call python,-m webbrowser file://$$(pwd)/node_modules/reveal.js/demo.html)
+
+.PHONY: deploy
+deploy: ## Deploy the slides
+	rsync --copy-links --delete --recursive --verbose $(RSYNC_SRC) $(RSYNC_USER)@$(RSYNC_HOST):$(RSYNC_DEST)

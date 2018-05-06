@@ -6,5 +6,8 @@
     "author_name": "Markus Zapke-Gründemann",
     "twitter_account": "keimlink",
     "github_account": "keimlink",
-    "repo_name": "{{ cookiecutter.presentation_title|lower|replace(' ', '-')|replace(\"'\", '') }}"
+    "repo_name": "{{ cookiecutter.presentation_title|lower|replace(' ', '-')|replace(\"'\", '') }}",
+    "rsync_user": "{{ cookiecutter.github_account }}",
+    "rsync_host": "example.com",
+    "rsync_destination": "{{ cookiecutter.repo_name }}"
 }
