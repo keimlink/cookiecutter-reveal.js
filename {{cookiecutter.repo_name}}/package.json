@@ -11,7 +11,7 @@
   "author": "{{ cookiecutter.author_name }}",
   "license": "CC-BY-4.0",
   "dependencies": {
-    "font-awesome": "4.6.3",
+    "font-awesome": "4.7.0",
     "reveal.js": "3.6.0"
   },
   "private": true
