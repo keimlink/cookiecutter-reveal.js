@@ -10,7 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/black.css" id="theme">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fa-solid.css">
+    <link rel="stylesheet" href="css/fa-regular.css">
+    <link rel="stylesheet" href="css/fa-brands.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
     <link rel="stylesheet" href="css/custom.css">
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -42,12 +45,12 @@
           <h2>Resources</h2>
           <p>
             <a href="https://github.com/{{ cookiecutter.github_account }}/{{ cookiecutter.repo_name }}">
-              <i class="fa fa-github"></i>{{ cookiecutter.github_account }}/{{ cookiecutter.repo_name }}
+              <i class="fab fa-github"></i>{{ cookiecutter.github_account }}/{{ cookiecutter.repo_name }}
             </a>
           </p>
           <p>
             <a href="https://twitter.com/{{ cookiecutter.twitter_account }}">
-              <i class="fa fa-twitter"></i>@{{ cookiecutter.twitter_account }}
+              <i class="fab fa-twitter"></i>@{{ cookiecutter.twitter_account }}
             </a>
           </p>
           <p class="creativecommons">
@@ -77,8 +80,14 @@
           { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
           { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
           { src: 'plugin/zoom-js/zoom.js', async: true },
-          { src: 'plugin/notes/notes.js', async: true }
-        ]
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'node_modules/reveal.js-menu/menu.js' }
+        ],
+        menu: {
+          themes: true,
+          transitions: true,
+          loadIcons: false
+        }
       });
     </script>
   </body>
