@@ -1,5 +1,12 @@
-.DEFAULT_GOAL := help
+SHELL := /bin/bash
 
+export PIP_DISABLE_PIP_VERSION_CHECK ?= True
+export PIP_UPGRADE ?= True
+
+pip = $(call python,-m pip $(1))
+python = /usr/bin/env python $(1)
+
+.DEFAULT_GOAL := help
 
 .PHONY: help
 help:
@@ -11,8 +18,8 @@ clean: ## Clean the cookiecutter output
 
 .PHONY: develop
 develop: ## Install (or update) all packages required for development
-	pip install -U pip setuptools wheel
-	pip install -U -r requirements.pip
+	$(call pip,install pip setuptools wheel)
+	$(call pip,install --requirement requirements.pip)
 
 .PHONY: test
 test: clean ## Test the cookiecutter template and generate a dummy presentation
