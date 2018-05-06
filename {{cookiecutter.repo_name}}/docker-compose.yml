@@ -1,0 +1,8 @@
+services:
+  decktape:
+    command: ["/home/user/index.html", "{{ cookiecutter.repo_name }}.pdf"]
+    image: astefanutti/decktape:2.8.2
+    volumes:
+      - .:/slides
+      - .:/home/user
+version: '3'

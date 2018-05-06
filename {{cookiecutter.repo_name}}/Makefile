@@ -58,3 +58,7 @@ demo: ## Open the reveal.js demo
 .PHONY: deploy
 deploy: ## Deploy the slides
 	rsync --copy-links --delete --recursive --verbose $(RSYNC_SRC) $(RSYNC_USER)@$(RSYNC_HOST):$(RSYNC_DEST)
+
+.PHONY: pdf
+pdf: ## Export slides as PDF
+	docker-compose run --rm decktape
