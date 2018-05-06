@@ -1,8 +1,11 @@
+SHELL := /bin/bash
+
 BIND_ADDRESS ?= 127.0.0.1
 PORT ?= 8000
 
-.DEFAULT_GOAL := help
+python = /usr/bin/env python $(1)
 
+.DEFAULT_GOAL := help
 
 .PHONY: help
 help:
@@ -39,8 +42,8 @@ link: node_modules ## Link all required resources
 serve: ## Serve the slides
 	@echo "Serving slides at http://$(BIND_ADDRESS):$(PORT)/"
 	@echo "Quit the server with CONTROL-C."
-	@python -m http.server --bind $(BIND_ADDRESS) $(PORT)
+	@$(call python,-m http.server --bind $(BIND_ADDRESS) $(PORT))
 
 .PHONY: demo
 demo: ## Open the reveal.js demo
-	python -m webbrowser file://$$(pwd)/node_modules/reveal.js/demo.html
+	$(call python,-m webbrowser file://$$(pwd)/node_modules/reveal.js/demo.html)
