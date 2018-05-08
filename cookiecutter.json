@@ -1,7 +1,7 @@
 {
     "presentation_title": "The title of your presentation",
-    "presentation_subtitle": "The subtitle is displayed right below the title",
-    "presentation_description": "A longer description of your presentation",
+    "presentation_subtitle": "The subtitle is displayed right below the title on the first slide",
+    "presentation_description": "A brief description of your presentation",
     "presentation_language": "en",
     "author_name": "Markus Zapke-Gründemann",
     "twitter_account": "keimlink",
