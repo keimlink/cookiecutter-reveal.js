@@ -1,6 +1,6 @@
-****************************
-{{ cookiecutter.repo_name }}
-****************************
+*************************************
+{{ cookiecutter.presentation_title }}
+*************************************
 
 {{ cookiecutter.presentation_description }}
 
