@@ -7,7 +7,7 @@ services:
     volumes:
       - .:/slides
   nginx:
-    image: nginx:1.14.0-alpine@sha256:a4bbaf406318769c28ff13fcc464bdf7d43b5ff666e9b5279ce568100499f375
+    image: nginx:1.14.0-alpine@sha256:b4f69b336db828ccdd0cdb6d3257f60cc8c5534cef6d08c2131d9a4950e893cf
     networks:
       default:
         aliases:
