@@ -3,6 +3,7 @@
     "presentation_subtitle": "The subtitle is displayed right below the title on the first slide",
     "presentation_description": "A brief description of your presentation",
     "presentation_language": "en",
+    "presentation_theme": ["black", "white", "league", "beige", "sky", "night", "serif", "simple", "solarized"],
     "author_name": "Markus Zapke-Gründemann",
     "twitter_account": "keimlink",
     "github_account": "keimlink",
