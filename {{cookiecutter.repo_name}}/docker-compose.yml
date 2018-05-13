@@ -1,6 +1,6 @@
 services:
   decktape:
-    command: ["/home/user/index.html", "{{ cookiecutter.repo_name }}.pdf"]
+    command: ["--size", "${PDF_VIEWPORT:-{{ cookiecutter.pdf_viewport }}}", "reveal", "/home/user/index.html", "{{ cookiecutter.repo_name }}.pdf"]
     image: astefanutti/decktape:2.8.3@sha256:1a941d17c54e79ce812019a7f89553c5ddbd4109425fe87e18a4506530c7cc3c
     volumes:
       - .:/slides

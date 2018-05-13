@@ -4,6 +4,7 @@
     "presentation_description": "A brief description of your presentation",
     "presentation_language": "en",
     "presentation_theme": ["black", "white", "league", "beige", "sky", "night", "serif", "simple", "solarized"],
+    "pdf_viewport": ["1920x1080", "4096x2160", "1280x800", "1024x768"],
     "author_name": "Markus Zapke-Gründemann",
     "twitter_account": "keimlink",
     "github_account": "keimlink",
