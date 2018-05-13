@@ -1,8 +1,17 @@
 services:
   decktape:
-    command: ["--size", "${PDF_VIEWPORT:-{{ cookiecutter.pdf_viewport }}}", "reveal", "/home/user/index.html", "{{ cookiecutter.repo_name }}.pdf"]
+    command: ["--size", "${PDF_VIEWPORT:-{{ cookiecutter.pdf_viewport }}}", "reveal", "http://slides?showNotes=true", "{{ cookiecutter.repo_name }}.pdf"]
+    depends_on:
+      - nginx
     image: astefanutti/decktape:2.8.3@sha256:1a941d17c54e79ce812019a7f89553c5ddbd4109425fe87e18a4506530c7cc3c
     volumes:
       - .:/slides
-      - .:/home/user
+  nginx:
+    image: nginx:1.14.0-alpine@sha256:a4bbaf406318769c28ff13fcc464bdf7d43b5ff666e9b5279ce568100499f375
+    networks:
+      default:
+        aliases:
+          - slides
+    volumes:
+      - .:/usr/share/nginx/html:ro
 version: '3'

@@ -61,4 +61,5 @@ deploy: ## Deploy the slides
 
 .PHONY: pdf
 pdf: ## Export slides as PDF
-	docker-compose run --rm decktape
+	docker-compose up decktape
+	docker-compose down
