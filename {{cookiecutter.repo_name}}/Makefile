@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-BIND_ADDRESS ?= 127.0.0.1
+HOST ?= 127.0.0.1
 PORT ?= 8000
 
 RSYNC_DEST ?= {{ cookiecutter.rsync_destination }}
@@ -50,9 +50,9 @@ link: ## Link all required resources
 
 .PHONY: serve
 serve: ## Serve the slides
-	@echo "Serving slides at http://$(BIND_ADDRESS):$(PORT)/"
+	@echo "Serving slides at http://$(HOST):$(PORT)/"
 	@echo "Quit the server with CONTROL-C."
-	@$(call python,-m http.server --bind $(BIND_ADDRESS) $(PORT))
+	@$(call python,-m http.server --bind $(HOST) $(PORT))
 
 .PHONY: demo
 demo: ## Open the reveal.js demo
