@@ -23,6 +23,7 @@ clean: ## Clean all linked resources
 			rm -f css/$$i; \
 		fi \
 	done
+	rm -f fonts
 	rm -f js
 	rm -f lib
 	rm -f plugin
@@ -38,6 +39,8 @@ link: ## Link all required resources
 	for i in $$(ls node_modules/reveal.js/css); do \
 		ln -fs ../node_modules/reveal.js/css/$$i css/$$i; \
 	done
+	ln -fs node_modules/devicons/fonts .
+	ln -fs ../node_modules/devicons/css/devicons.min.css css/devicons.min.css
 	ln -fs node_modules/@fortawesome/fontawesome-free-webfonts/webfonts .
 	ln -fs node_modules/reveal.js/js .
 	ln -fs node_modules/reveal.js/lib .

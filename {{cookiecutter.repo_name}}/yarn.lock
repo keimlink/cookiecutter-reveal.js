@@ -6,6 +6,10 @@
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free-webfonts/-/fontawesome-free-webfonts-1.0.8.tgz#07d9497904dc036d81f697356932dfeb50e5921f"
 
+devicons@1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/devicons/-/devicons-1.8.0.tgz#df725a8b0ac2cce24c74b782c2f14f8b73832c2d"
+
 reveal.js-menu@1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/reveal.js-menu/-/reveal.js-menu-1.1.2.tgz#1d3b7a87c2b840cc5b3ebdd8fd81940f1147ba78"
