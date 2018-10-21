@@ -11,7 +11,7 @@
   "author": "{{ cookiecutter.author_name }}",
   "license": "CC-BY-4.0",
   "dependencies": {
-    "@fortawesome/fontawesome-free-webfonts": "1.0.8",
+    "@fortawesome/fontawesome-free-webfonts": "1.0.9",
     "devicons": "1.8.0",
     "reveal.js": "3.6.0",
     "reveal.js-menu": "1.1.2"
