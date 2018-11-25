@@ -3,7 +3,7 @@ services:
     command: ["--size", "${PDF_VIEWPORT:-{{ cookiecutter.pdf_viewport }}}", "reveal", "http://slides?showNotes=true", "{{ cookiecutter.repo_name }}.pdf"]
     depends_on:
       - nginx
-    image: astefanutti/decktape:2.8.3@sha256:1a941d17c54e79ce812019a7f89553c5ddbd4109425fe87e18a4506530c7cc3c
+    image: astefanutti/decktape:2.9.0@sha256:682d9696d8e1ca62b8e06f7803000436273228103c69da557b6e8be65da3cad0
     volumes:
       - .:/slides
   nginx:
