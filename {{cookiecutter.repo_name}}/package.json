@@ -14,7 +14,7 @@
     "@fortawesome/fontawesome-free-webfonts": "1.0.8",
     "devicons": "1.8.0",
     "reveal.js": "3.6.0",
-    "reveal.js-menu": "1.1.2"
+    "reveal.js-menu": "2.1.0"
   },
   "private": true
 }
